@@ -48,4 +48,17 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = 'pip_window.html'; 
         }); 
 
+    document.addEventListener('leavepictureinpicture', () => {
+        pipMessage.style.display = 'none'; 
+    });
+    
+    document.getElementById('moreButton').addEventListener('click', () => {
+        window.location.href = 'nature.html'; 
+      });
+      
+    // Return to main menu 
+    document.getElementById('backButton').addEventListener('click', () => {
+        window.location.href = 'pip_window.html'; 
+    }); 
+
 });
