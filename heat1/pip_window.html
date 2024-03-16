@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video PiP</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    button img {
+      height: 50px;
+      width: 50px;
+    }
+  </style>
+</head>
+<body>
+  <video id="videoElement" controls autoplay muted height="0" width="0">
+    <source id="videoSource" src="videos/myvideo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <button id="video1Button">
+    <img src="images/subways.webp" alt="Video 1">
+  </button>
+  <button id="video2Button">
+    <img src="images/gta.jpg" alt="Video 2">
+  </button>
+  <button id="video3Button">
+    <img src="images/mc.png" alt="Video 3">
+  </button>
+  <script src="pip_script.js"></script>
+</body>
