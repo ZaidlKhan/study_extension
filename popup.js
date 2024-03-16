@@ -1,13 +1,18 @@
+// Opens pip_window.html
+// upon content load
 document.addEventListener('DOMContentLoaded', () => {
   const enablePiPButton = document.getElementById('enablePiP');
 
   enablePiPButton.addEventListener('click', () => {
-    const popupWidth = 300;
-    const popupHeight = 500;
+    // Opened window dimensions
+    const popupWidth = 400;
+    const popupHeight = 600;
 
+    // Screen position
     const leftPosition = (screen.width / 2) - (popupWidth / 2);
     const topPosition = (screen.height / 2) - (popupHeight / 2);
 
+    // Create window
     chrome.windows.create({
       url: 'pip_window.html',
       type: 'popup',

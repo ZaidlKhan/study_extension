@@ -128,16 +128,7 @@ body {
   z-index: 1000; 
 }
 
-.more-button {
-  background-color: #eee; 
-  color: #333; 
-  border: 1px solid #ddd; 
-  border-radius: 5px; 
-  padding: 10px 20px; 
-  margin: 0 20px 20px 0; 
-  cursor: pointer;
-  white-space: normal; 
-}
+
 
 .video-item {
   margin-bottom: 30px; 
@@ -147,6 +138,17 @@ body {
   width: 100%; 
   border-radius: 12px; 
   margin-bottom: 10px; 
+}
+
+.more-button {
+  background-color: #eee; 
+  color: #333; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  margin: 0 20px 20px 0; 
+  cursor: pointer;
+  white-space: normal; 
 }
 
 .back-button {
@@ -159,4 +161,5 @@ body {
   border: 1px solid #ddd; 
   border-radius: 5px; 
   cursor: pointer; 
+  /* width:auto; */
 }

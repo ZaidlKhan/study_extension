@@ -6,20 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZenFocus</title>
 </head>
-
 <body>
 
-<!-- Container 1: Popular -->
-<div class="container">
 
+
+<div class="container">
   <div class="title">
     <img class="logo" src="images/logo.png" alt="Logo" width="200" height="auto"> 
   </div>
-
   <div class="section">
-  <div class="section-title">Most Popular</div>
-  <div class="slider">
 
+<!-- js class, css class, text -->
+<button id="backButton" class="button back-button">
+    Back
+</button>
+
+  <div class="section-title">Most Popular Videos</div>
+
+  
+  <div class="slider">
     <div class="slider-wrapper">
       <button id="minecraftParkourButton" class="button">
         <img src="images/minecraft_parkour.png" alt="Minecraft Parkour">
@@ -48,55 +53,9 @@
             </div>
           </div>
         </button>
-
-        <!-- Leads to nature.html -->
-        <button id="moreButton" class="button more-button"> 
-          More...
-        </button>
+        <!-- <button id="moreButton" class="button more-button"> More...</button>  -->
   </div>
 </div>
-
-<!-- Container 2: Nature -->
-<div class="container">
-
-  <div class="section">
-  <div class="section-title">Relaxing Videos</div>
-  <div class="slider">
-
-    <div class="slider-wrapper">
-      <button id="minecraftParkourButton" class="button">
-        <img src="images/PLACEHOLDER_BLACK.jpeg" alt="Minecraft Parkour">
-        <div class="description">
-          <div class="big-caption">Minecraft Parkour</div>
-          <div class="small-caption">Relaxing, Ambient</div>
-        </div>
-      </button>
-
-       <button id="rainFallOutsideButton" class="button">
-          <img src="images/PLACEHOLDER_BLACK.jpeg" alt="Rain Fall Outside"> 
-          <div class="description">
-            <div class="description">
-              <div class="big-caption">Rain Fall Outside</div>
-              <div class="small-caption">Relaxing, Ambient</div>
-            </div>
-          </div>
-        </button>
-
-        <button id="city" class="button">
-          <img src="images/PLACEHOLDER_BLACK.jpeg" alt="Walk Through City"> 
-          <div class="description">
-            <div class="description">
-              <div class="big-caption">Walk Through City</div>
-              <div class="small-caption">Relaxing, Ambient</div>
-            </div>
-          </div>
-        </button>
-
-        <!-- Leads to nature.html -->
-        <button id="moreButton2" class="button more-button"> 
-          More...
-        </button>
-  </div>
 </div>
 
 <video id="videoElement" controls autoplay muted height="0" width="0" style="display:none;">
@@ -106,6 +65,5 @@
 <div id="pipMessage" style="display: none;">Video playing in window</div>
 
 <script src="pip_script.js"></script>
-
 </body>
 </html>

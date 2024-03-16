@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoSource = document.getElementById('videoSource');
     const pipMessage = document.getElementById('pipMessage'); 
 
+    // Pip
     function changeVideoAndEnterPiP(videoUrl) {
         videoSource.src = videoUrl;
         videoElement.load();
@@ -19,24 +20,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    document.getElementById('minecraftParkourButton').addEventListener('click', () => {
-        changeVideoAndEnterPiP('videos/mc.mp4');
-    });
+    // Video players
+        document.getElementById('minecraftParkourButton').addEventListener('click', () => {
+            changeVideoAndEnterPiP('videos/mc.mp4');
+        });
 
-    document.getElementById('rainFallOutsideButton').addEventListener('click', () => {
-        changeVideoAndEnterPiP('videos/mc.mp4');
-    });
+        document.getElementById('rainFallOutsideButton').addEventListener('click', () => {
+            changeVideoAndEnterPiP('videos/mc.mp4');
+        });
 
-    document.addEventListener('leavepictureinpicture', () => {
-        pipMessage.style.display = 'none'; 
-    });
-    
-    document.getElementById('moreButton').addEventListener('click', () => {
-        window.location.href = 'nature.html'; 
-      });
-      
+        document.addEventListener('leavepictureinpicture', () => {
+            pipMessage.style.display = 'none'; 
+        });
 
-      document.getElementById('backButton').addEventListener('click', () => {
-        window.location.href = 'pip_window.html'; 
-      }); 
+    // Buttons 
+        // More Buttons
+        document.getElementById('moreButton').addEventListener('click', () => {
+            window.location.href = 'popular.html'; 
+        });
+
+        document.getElementById('moreButton2').addEventListener('click', () => {
+            window.location.href = 'nature.html'; 
+        });
+        
+        // Back Button
+        document.getElementById('backButton').addEventListener('click', () => {
+            window.location.href = 'pip_window.html'; 
+        }); 
+
 });
