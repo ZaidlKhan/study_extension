@@ -3,7 +3,7 @@
   "name": "Video PiP Extension",
   "version": "1.0",
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "pip_script.js"
   },
   "permissions": ["activeTab", "scripting"],
   "action": {
