@@ -35,8 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = 'nature.html'; 
       });
       
-
-      document.getElementById('backButton').addEventListener('click', () => {
+    // Return to main menu 
+    document.getElementById('backButton').addEventListener('click', () => {
         window.location.href = 'pip_window.html'; 
-      }); 
+    }); 
+
 });
