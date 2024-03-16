@@ -16,15 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    document.getElementById('video1Button').addEventListener('click', () => {
-        changeVideoAndEnterPiP('videos/myVideo.mp4');
-    });
-
-    document.getElementById('video2Button').addEventListener('click', () => {
-        changeVideoAndEnterPiP('videos/GTA.mp4');
-    });
-
-    document.getElementById('video3Button').addEventListener('click', () => {
+    document.getElementById('minecraftParkourButton').addEventListener('click', () => {
         changeVideoAndEnterPiP('videos/mc.mp4');
     });
+
+    document.getElementById('rainFallOutsideButton').addEventListener('click', () => {
+        changeVideoAndEnterPiP('videos/mc.mp4');
+    });
+
 });

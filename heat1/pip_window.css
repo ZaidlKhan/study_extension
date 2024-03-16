@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    margin-right: 10px;
+  }
+
+  .section-title {
+    text-align: left;
+    margin: 0px 10px;
+    font-size: 1.5em;
+  }
+
+  .button {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 10px;
+    margin-bottom: 2px;
+    display: inline-block; 
+    text-align: center; 
+  }
+  
+  .button img {
+    width: auto;
+    height: 80px;
+    border-radius: 12px;
+  }
+  
+  .description {
+    font-size: 0.9em;
+    color: grey;
+  }
+  
+  .big-caption {
+    font-size: 1em; 
+    color: #000;
+    margin-top: 5px;
+  }
+  
+  .small-caption {
+    font-size: 0.7em; 
+    color: #666;
+    margin-top: 2px; 
+  }  
+  
+  .star-rating {
+    color: orange;
+  }
+
+  .slider {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .slider-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .thumbnail-button:last-child {
+    margin-right: 0;
+  }
+  
+  .thumbnail-button img {
+    width: auto; 
+    height: 100px; 
+    vertical-align: middle;
+  }
+
+  .star-rating {
+    color: #000; 
+  }

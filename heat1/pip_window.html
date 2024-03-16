@@ -1,40 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Video PiP</title>
-  <style>
-    body {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-    button {
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
-    button img {
-      height: 50px;
-      width: 50px;
-    }
-  </style>
+  <link rel="stylesheet" href="pip_window.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZenFocus</title>
 </head>
 <body>
-  <video id="videoElement" controls autoplay muted height="0" width="0">
-    <source id="videoSource" src="videos/myvideo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <button id="video1Button">
-    <img src="images/subways.webp" alt="Video 1">
-  </button>
-  <button id="video2Button">
-    <img src="images/gta.jpg" alt="Video 2">
-  </button>
-  <button id="video3Button">
-    <img src="images/mc.png" alt="Video 3">
-  </button>
-  <script src="pip_script.js"></script>
+
+<div class="container">
+  <div class="title">
+    <img class="logo" src="your_logo_path.svg" alt="Logo" width="50"> 
+    <h1>ZenFocus</h1>
+  </div>
+  <div class="section">
+  <div class="section-title">Most Popular</div>
+  <div class="slider">
+    <div class="slider-wrapper">
+      <button id="minecraftParkourButton" class="button">
+        <img src="images/minecraft_parkour.png" alt="Minecraft Parkour">
+        <div class="description">
+          <div class="big-caption">Minecraft Parkour</div>
+          <div class="small-caption">Relaxing, Ambient</div>
+        </div>
+      </button>
+
+       <button id="rainFallOutsideButton" class="button">
+          <img src="images/rainfall.jpeg" alt="Rain Fall Outside"> 
+          <div class="description">
+            <div class="description">
+              <div class="big-caption">Rain Fall Outside</div>
+              <div class="small-caption">Relaxing, Ambient</div>
+            </div>
+          </div>
+        </button>
+
+        <button id="city" class="button">
+          <img src="images/city.jpeg" alt="Walk Through City"> 
+          <div class="description">
+            <div class="description">
+              <div class="big-caption">Walk Through City</div>
+              <div class="small-caption">Relaxing, Ambient</div>
+            </div>
+          </div>
+        </button>
+  </div>
+
+
+<video id="videoElement" controls autoplay muted height="0" width="0" style="display:none;">
+  <source id="videoSource" src="" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<script src="pip_script.js"></script>
 </body>
+</html>
