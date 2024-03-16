@@ -20,18 +20,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    document.addEventListener('leavepictureinpicture', () => {
+        pipMessage.style.display = 'none'; 
+    });
+
     // Video players
         document.getElementById('minecraftParkourButton').addEventListener('click', () => {
-            changeVideoAndEnterPiP('videos/mc.mp4');
+            changeVideoAndEnterPiP('videos/PLACEHOLDER.mp4');
         });
 
         document.getElementById('rainFallOutsideButton').addEventListener('click', () => {
-            changeVideoAndEnterPiP('videos/mc.mp4');
+            changeVideoAndEnterPiP('videos/PLACEHOLDER.mp4');
         });
 
-        document.addEventListener('leavepictureinpicture', () => {
-            pipMessage.style.display = 'none'; 
-        });
+
 
     // Buttons 
         // More Buttons
@@ -48,17 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = 'pip_window.html'; 
         }); 
 
-    document.addEventListener('leavepictureinpicture', () => {
-        pipMessage.style.display = 'none'; 
-    });
+
     
-    document.getElementById('moreButton').addEventListener('click', () => {
-        window.location.href = 'nature.html'; 
-      });
-      
-    // Return to main menu 
-    document.getElementById('backButton').addEventListener('click', () => {
-        window.location.href = 'pip_window.html'; 
-    }); 
 
 });
