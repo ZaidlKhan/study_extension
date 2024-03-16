@@ -32,7 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     document.getElementById('moreButton').addEventListener('click', () => {
-        window.location.href = 'nature_video.html'; 
+        window.location.href = 'nature.html'; 
       });
       
+
+      document.getElementById('back-button').addEventListener('click', () => {
+        window.location.href = 'pip_window.html'; 
+      }); 
 });
