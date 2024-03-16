@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       
 
-      document.getElementById('back-button').addEventListener('click', () => {
+      document.getElementById('backButton').addEventListener('click', () => {
         window.location.href = 'pip_window.html'; 
       }); 
 });
