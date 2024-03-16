@@ -36,14 +36,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // Buttons 
-        // More Buttons
-        document.getElementById('moreButton').addEventListener('click', () => {
-            window.location.href = 'popular.html'; 
-        });
-
-        document.getElementById('moreButton2').addEventListener('click', () => {
-            window.location.href = 'nature.html'; 
-        });
         
+        // Back Button
+        document.getElementById('backButton').addEventListener('click', () => {
+            window.location.href = 'pip_window.html'; 
+        }); 
+
+
 
 });
