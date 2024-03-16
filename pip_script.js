@@ -1,13 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
     const videoElement = document.getElementById('videoElement');
     const videoSource = document.getElementById('videoSource');
+    const pipMessage = document.getElementById('pipMessage'); 
 
     function changeVideoAndEnterPiP(videoUrl) {
         videoSource.src = videoUrl;
         videoElement.load();
         videoElement.play().then(() => {
             if (videoElement !== document.pictureInPictureElement) {
-                videoElement.requestPictureInPicture().catch(error => {
+                videoElement.requestPictureInPicture().then(() => {
+                    pipMessage.style.display = 'block'; 
+                }).catch(error => {
                     console.error('Error attempting to enable Picture-in-Picture mode:', error);
                 });
             }
@@ -24,4 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
         changeVideoAndEnterPiP('videos/mc.mp4');
     });
 
+    document.addEventListener('leavepictureinpicture', () => {
+        pipMessage.style.display = 'none'; 
+    });
+    
+    document.getElementById('moreButton').addEventListener('click', () => {
+        window.location.href = 'nature_video.html'; 
+      });
+      
 });

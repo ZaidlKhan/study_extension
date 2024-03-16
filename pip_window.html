@@ -10,8 +10,7 @@
 
 <div class="container">
   <div class="title">
-    <img class="logo" src="images/icon48.png" alt="Logo" width="50"> 
-    <h1>ZenFocus</h1>
+    <img class="logo" src="images/logo.png" alt="Logo" width="200" height="auto"> 
   </div>
   <div class="section">
   <div class="section-title">Most Popular</div>
@@ -44,13 +43,16 @@
             </div>
           </div>
         </button>
+        <button id="moreButton" class="button more-button">
+          More...
+        </button>
   </div>
-
 
 <video id="videoElement" controls autoplay muted height="0" width="0" style="display:none;">
   <source id="videoSource" src="" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+<div id="pipMessage" style="display: none;">Video playing in window</div>
 
 <script src="pip_script.js"></script>
 </body>
